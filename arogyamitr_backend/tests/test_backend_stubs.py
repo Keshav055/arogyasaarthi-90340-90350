@@ -8,7 +8,6 @@ These tests are placeholders for key modules:
 - Real-time WebSocket endpoints (Assistant chatbot, Teleconsult)
 """
 
-import pytest
 from fastapi.testclient import TestClient
 from src.api.main import app
 

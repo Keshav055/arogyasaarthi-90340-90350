@@ -13,6 +13,9 @@ from ..disease_management.router import router as disease_router
 from ..teleconsultation.router import router as teleconsult_router
 from ..education.router import router as education_router
 
+# Import Sleep router (mock/demo)
+from ..sleep.router import router as sleep_router
+
 # WebSocket endpoints
 from .websockets import router as websocket_router
 
@@ -64,6 +67,7 @@ app.include_router(wellness_router)
 app.include_router(nutrition_router)
 app.include_router(fitness_router)
 app.include_router(mindfulness_router)
+app.include_router(sleep_router)  # <-- New for sleep mock endpoints
 app.include_router(disease_router)
 app.include_router(teleconsult_router)
 app.include_router(education_router)
